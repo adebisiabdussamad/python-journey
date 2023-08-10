@@ -94,17 +94,33 @@
 #     print("This is an odd number.")
 
 # NESTED IF/ELSE STATEMENT
-print('Welcome to the rollercoaster!')
-height = int(input('What is your height in cm? '))
+# print('Welcome to the rollercoaster!')
+# height = int(input('What is your height in cm? '))
 
-if height == 120:
-    print('You can ride the rollercoaster!')
-    age = int(input('What is your age? '))
-    if age < 12:
-        print('Please pay $5.')
-    elif age <= 18:
-        print('Please pay $7.')
-    else:
-        print('Please pay $12.')
+# if height == 120:
+#     print('You can ride the rollercoaster!')
+#     age = int(input('What is your age? '))
+#     if age < 12:
+#         print('Please pay $5.')
+#     elif age <= 18:
+#         print('Please pay $7.')
+#     else:
+#         print('Please pay $12.')
+# else:
+#     print('Sorry, you have to grow taller before you can ride.')
+
+# Interactive Coding 3.1
+height = input('enter your height in m: ')
+weight = input('enter your weight in kg: ')
+
+BMI = int(weight) / float(height) ** 2
+if BMI < 18.5:
+    print(f'You weigh {round(BMI, 2)},\nYou are underweight.')
+elif BMI > 18.5:
+    print(f'You weigh {round(BMI, 2)},\nYou have a normal weight.')
+elif BMI > 25:
+    print(f'You weigh {round(BMI, 2)},\nYou are overweight')
+elif BMI > 30:
+    print(f'You weigh {round(BMI, 2)},\nYou are obese.')
 else:
-    print('Sorry, you have to grow taller before you can ride.')
+    print(f'You weigh {round(BMI, 2)},\nYou are clinically Obese.')
