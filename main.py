@@ -110,17 +110,17 @@
 #     print('Sorry, you have to grow taller before you can ride.')
 
 # Interactive Coding 3.1
-height = input('enter your height in m: ')
-weight = input('enter your weight in kg: ')
+height = float(input('enter your height in m: '))
+weight = float(input('enter your weight in kg: '))
 
-BMI = int(weight) / float(height) ** 2
+BMI = round(weight / height ** 2)
 if BMI < 18.5:
-    print(f'You weigh {round(BMI, 2)},\nYou are underweight.')
-elif BMI > 18.5:
-    print(f'You weigh {round(BMI, 2)},\nYou have a normal weight.')
-elif BMI > 25:
-    print(f'You weigh {round(BMI, 2)},\nYou are overweight')
-elif BMI > 30:
-    print(f'You weigh {round(BMI, 2)},\nYou are obese.')
+    print(f'Your BMI is {BMI}, you are underweight.')
+elif BMI < 25:
+    print(f'Your BMI is {BMI}, you have a normal weight.')
+elif BMI < 30:
+    print(f'Your BMI is {BMI}, you are slightly overweight')
+elif BMI < 35:
+    print(f'Your BMI is {BMI}, you are obese.')
 else:
-    print(f'You weigh {round(BMI, 2)},\nYou are clinically Obese.')
+    print(f'Your BMI is {BMI}, you are clinically obese.')
