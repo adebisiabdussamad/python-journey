@@ -144,27 +144,53 @@
 #     print('Not leap year')
 
 # Multiple conditions
-print('Welcome to the rollercoaster!')
-height = int(input('What is your height in cm? '))
+# print('Welcome to the rollercoaster!')
+# height = int(input('What is your height in cm? '))
+# bill = 0
+
+# if height > 120:
+#     print('You can ride the rollercoaster!')
+#     age = int(input('What is your age? '))
+#     if age < 12:
+#         bill = 5
+#         print('Child ticket are $5.')
+#     elif age <= 18:
+#         bill = 7
+#         print('Youth ticket are $7.')
+#     else:
+#         bill = 12
+#         print('Adult ticket are $12.')
+#     wants_photos = input('Do you want a photo taken? Y or N. ')
+#     if wants_photos == 'Y':
+#         bill += 3
+#     print(f'Your final bill is ${bill}')
+
+
+# else:
+#     print('Sorry, you have to grow taller before you can ride.')
+
+# Interactive Coding 3.3
+# 🚨 Don't change the code below 👇
+print("Welcome to Python Pizza Deliveries!")
+size = input("What size pizza do you want? S, M, or L ")
+add_pepperoni = input("Do you want pepperoni? Y or N ")
+extra_cheese = input("Do you want extra cheese? Y or N ")
+# 🚨 Don't change the code above 👆
+
+# Write your code below this line 👇
+
 bill = 0
-
-if height > 120:
-    print('You can ride the rollercoaster!')
-    age = int(input('What is your age? '))
-    if age < 12:
-        bill = 5
-        print('Child ticket are $5.')
-    elif age <= 18:
-        bill = 7
-        print('Youth ticket are $7.')
-    else:
-        bill = 12
-        print('Adult ticket are $12.')
-    wants_photos = input('Do you want a photo taken? Y or N. ')
-    if wants_photos == 'Y':
-        bill += 3
-    print(f'Your final bill is ${bill}')
-
-
+if size == 'S':
+    bill += 15
+elif size == 'M':
+    bill += 20
 else:
-    print('Sorry, you have to grow taller before you can ride.')
+    bill += 25
+if add_pepperoni == 'Y':
+    if size == 'S':
+        bill += 2
+    else:
+        bill += 3
+if extra_cheese == 'Y':
+    bill += 1
+print(f'Your final bill is: ${bill}')
