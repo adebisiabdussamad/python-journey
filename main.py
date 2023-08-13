@@ -199,31 +199,71 @@
 # and
 # or
 # not
-print('Welcome to the rollercoaster!')
-height = int(input('What is your height in cm? '))
-bill = 0
+# print('Welcome to the rollercoaster!')
+# height = int(input('What is your height in cm? '))
+# bill = 0
+#
+# if height > 120:
+#     print('You can ride the rollercoaster!')
+#     age = int(input('What is your age? '))
+#     if age < 12:
+#         bill = 5
+#         print('Child ticket are $5.')
+#     elif age <= 18:
+#         bill = 7
+#         print('Youth ticket are $7.')
+#     elif 45 <= age <= 48:
+#         bill = 0
+#         print('Midlife crises ticket is $0.')
+#
+#     else:
+#         bill = 12
+#         print('Adult ticket are $12.')
+#     wants_photos = input('Do you want a photo taken? Y or N. ')
+#     if wants_photos == 'Y':
+#         bill += 3
+#     print(f'Your final bill is ${bill}')
+# else:
+#     print('Sorry, you have to grow taller before you can ride.')
 
-if height > 120:
-    print('You can ride the rollercoaster!')
-    age = int(input('What is your age? '))
-    if age < 12:
-        bill = 5
-        print('Child ticket are $5.')
-    elif age <= 18:
-        bill = 7
-        print('Youth ticket are $7.')
-    elif 45 <= age <= 48:
-        bill = 0
-        print('Midlife crises ticket is $0.')
+# Interactive Coding 3.5
 
-    else:
-        bill = 12
-        print('Adult ticket are $12.')
-    wants_photos = input('Do you want a photo taken? Y or N. ')
-    if wants_photos == 'Y':
-        bill += 3
-    print(f'Your final bill is ${bill}')
+print('Welcome to the Love Calculator!')
+name1 = input('What is your name? \n')
+name2 = input('What is their name? \n')
 
+name1_in_lowercase = name1.lower()
+name2_in_lowercase = name2.lower()
 
+count_T_in_name1 = name1_in_lowercase.count('t')
+count_R_in_name1 = name1_in_lowercase.count('r')
+count_U_in_name1 = name1_in_lowercase.count('u')
+count_E_in_name1 = name1_in_lowercase.count('e')
+count_L_in_name1 = name1_in_lowercase.count('l')
+count_O_in_name1 = name1_in_lowercase.count('o')
+count_V_in_name1 = name1_in_lowercase.count('v')
+count_T_in_name2 = name2_in_lowercase.count('t')
+count_R_in_name2 = name2_in_lowercase.count('r')
+count_U_in_name2 = name2_in_lowercase.count('u')
+count_E_in_name2 = name2_in_lowercase.count('e')
+count_L_in_name2 = name2_in_lowercase.count('l')
+count_O_in_name2 = name2_in_lowercase.count('o')
+count_V_in_name2 = name2_in_lowercase.count('v')
+
+total_for_TRUE_in_name1 = (count_T_in_name1 + count_R_in_name1 + count_U_in_name1 + count_E_in_name1)
+total_for_LOVE_in_name1 = (count_L_in_name1 + count_O_in_name1 + count_V_in_name1 + count_E_in_name1)
+total_for_TRUE_in_name2 = (count_T_in_name2 + count_R_in_name2 + count_U_in_name2 + count_E_in_name2)
+total_for_LOVE_in_name2 = (count_L_in_name2 + count_O_in_name2 + count_V_in_name2 + count_E_in_name2)
+
+total_for_TRUE = total_for_TRUE_in_name1 + total_for_TRUE_in_name2
+total_for_LOVE = total_for_LOVE_in_name1 + total_for_LOVE_in_name2
+
+total_in_string = str(total_for_TRUE) + str(total_for_LOVE)
+
+love_score = int(total_in_string)
+if love_score < 10 or love_score > 10:
+    print(f'Your score is {love_score}, you go together like coke and mentos')
+elif love_score >= 40 and love_score <= 50:
+    print(f'Your score is ${love_score}, you are alright together')
 else:
-    print('Sorry, you have to grow taller before you can ride.')
+    print(f'Your is {love_score}')
