@@ -261,9 +261,9 @@ total_for_LOVE = total_for_LOVE_in_name1 + total_for_LOVE_in_name2
 total_in_string = str(total_for_TRUE) + str(total_for_LOVE)
 
 love_score = int(total_in_string)
-if love_score < 10 or love_score > 10:
+if love_score < 10 or love_score > 90:
     print(f'Your score is {love_score}, you go together like coke and mentos')
-elif love_score >= 40 and love_score <= 50:
-    print(f'Your score is ${love_score}, you are alright together')
+elif love_score > 40 and love_score < 50:
+    print(f'Your score is {love_score}, you are alright together')
 else:
-    print(f'Your is {love_score}')
+    print(f'Your score is {love_score}')
