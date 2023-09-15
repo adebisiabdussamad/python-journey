@@ -228,42 +228,90 @@
 
 # Interactive Coding 3.5
 
-print('Welcome to the Love Calculator!')
-name1 = input('What is your name? \n')
-name2 = input('What is their name? \n')
+# print('Welcome to the Love Calculator!')
+# name1 = input('What is your name? \n')
+# name2 = input('What is their name? \n')
 
-name1_in_lowercase = name1.lower()
-name2_in_lowercase = name2.lower()
+# name1_in_lowercase = name1.lower()
+# name2_in_lowercase = name2.lower()
 
-count_T_in_name1 = name1_in_lowercase.count('t')
-count_R_in_name1 = name1_in_lowercase.count('r')
-count_U_in_name1 = name1_in_lowercase.count('u')
-count_E_in_name1 = name1_in_lowercase.count('e')
-count_L_in_name1 = name1_in_lowercase.count('l')
-count_O_in_name1 = name1_in_lowercase.count('o')
-count_V_in_name1 = name1_in_lowercase.count('v')
-count_T_in_name2 = name2_in_lowercase.count('t')
-count_R_in_name2 = name2_in_lowercase.count('r')
-count_U_in_name2 = name2_in_lowercase.count('u')
-count_E_in_name2 = name2_in_lowercase.count('e')
-count_L_in_name2 = name2_in_lowercase.count('l')
-count_O_in_name2 = name2_in_lowercase.count('o')
-count_V_in_name2 = name2_in_lowercase.count('v')
+# count_T_in_name1 = name1_in_lowercase.count('t')
+# count_R_in_name1 = name1_in_lowercase.count('r')
+# count_U_in_name1 = name1_in_lowercase.count('u')
+# count_E_in_name1 = name1_in_lowercase.count('e')
+# count_L_in_name1 = name1_in_lowercase.count('l')
+# count_O_in_name1 = name1_in_lowercase.count('o')
+# count_V_in_name1 = name1_in_lowercase.count('v')
+# count_T_in_name2 = name2_in_lowercase.count('t')
+# count_R_in_name2 = name2_in_lowercase.count('r')
+# count_U_in_name2 = name2_in_lowercase.count('u')
+# count_E_in_name2 = name2_in_lowercase.count('e')
+# count_L_in_name2 = name2_in_lowercase.count('l')
+# count_O_in_name2 = name2_in_lowercase.count('o')
+# count_V_in_name2 = name2_in_lowercase.count('v')
 
-total_for_TRUE_in_name1 = (count_T_in_name1 + count_R_in_name1 + count_U_in_name1 + count_E_in_name1)
-total_for_LOVE_in_name1 = (count_L_in_name1 + count_O_in_name1 + count_V_in_name1 + count_E_in_name1)
-total_for_TRUE_in_name2 = (count_T_in_name2 + count_R_in_name2 + count_U_in_name2 + count_E_in_name2)
-total_for_LOVE_in_name2 = (count_L_in_name2 + count_O_in_name2 + count_V_in_name2 + count_E_in_name2)
+# total_for_TRUE_in_name1 = (count_T_in_name1 + count_R_in_name1 + count_U_in_name1 + count_E_in_name1)
+# total_for_LOVE_in_name1 = (count_L_in_name1 + count_O_in_name1 + count_V_in_name1 + count_E_in_name1)
+# total_for_TRUE_in_name2 = (count_T_in_name2 + count_R_in_name2 + count_U_in_name2 + count_E_in_name2)
+# total_for_LOVE_in_name2 = (count_L_in_name2 + count_O_in_name2 + count_V_in_name2 + count_E_in_name2)
 
-total_for_TRUE = total_for_TRUE_in_name1 + total_for_TRUE_in_name2
-total_for_LOVE = total_for_LOVE_in_name1 + total_for_LOVE_in_name2
+# total_for_TRUE = total_for_TRUE_in_name1 + total_for_TRUE_in_name2
+# total_for_LOVE = total_for_LOVE_in_name1 + total_for_LOVE_in_name2
 
-total_in_string = str(total_for_TRUE) + str(total_for_LOVE)
+# total_in_string = str(total_for_TRUE) + str(total_for_LOVE)
 
-love_score = int(total_in_string)
-if love_score < 10 or love_score > 90:
-    print(f'Your score is {love_score}, you go together like coke and mentos')
-elif love_score > 40 and love_score < 50:
-    print(f'Your score is {love_score}, you are alright together')
+# love_score = int(total_in_string)
+# if love_score < 10 or love_score > 90:
+#     print(f'Your score is {love_score}, you go together like coke and mentos')
+# elif love_score > 40 and love_score < 50:
+#     print(f'Your score is {love_score}, you are alright together')
+# else:
+#     print(f'Your score is {love_score}')
+
+# Coding Challenge 3
+print('''
+*******************************************************************************
+          |                   |                  |                     |
+ _________|________________.=""_;=.______________|_____________________|_______
+|                   |  ,-"_,=""     `"=.|                  |
+|___________________|__"=._o`"-._        `"=.______________|___________________
+          |                `"=._o`"=._      _`"=._                     |
+ _________|_____________________:=._o "=._."_.-="'"=.__________________|_______
+|                   |    __.--" , ; `"=._o." ,-"""-._ ".   |
+|___________________|_._"  ,. .` ` `` ,  `"-._"-._   ". '__|___________________
+          |           |o`"=._` , "` `; .". ,  "-._"-._; ;              |
+ _________|___________| ;`-.o`"=._; ." ` '`."\` . "-._ /_______________|_______
+|                   | |o;    `"-.o`"=._``  '` " ,__.--o;   |
+|___________________|_| ;     (#) `-.o `"=.`_.--"_o.-; ;___|___________________
+____/______/______/___|o;._    "      `".o|o_.--"    ;o;____/______/______/____
+/______/______/______/_"=._o--._        ; | ;        ; ;/______/______/______/_
+____/______/______/______/__"=._o--._   ;o|o;     _._;o;____/______/______/____
+/______/______/______/______/____"=._o._; | ;_.--"o.--"_/______/______/______/_
+____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
+/______/______/______/______/______/______/______/______/______/______/_____ /
+*******************************************************************************
+ ''')
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+# Write your code below this line 👇
+first_move = (input('left or right? ')).lower()
+
+if first_move == 'left':
+    second_move = input('swim or wait? ').lower()
+    if second_move == 'wait':
+        third_move = input('Which Color of door? ').lower()
+        if third_move == 'blue':
+            print('Eaten by beasts. Game Over.')
+        elif third_move == 'red':
+            print('Burned by fire. Game Over.')
+        elif third_move == 'yellow':
+            print('You Win!')
+        else:
+            print('Game Over')
+    else:
+        print('Fall into a hole. Game Over')
 else:
-    print(f'Your score is {love_score}')
+    print('Fall into a hole. Game Over')
+
+    'Whats up my people'
