@@ -269,6 +269,7 @@
 #     print(f'Your score is {love_score}')
 
 # Coding Challenge 3
+import random
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -318,15 +319,27 @@ print("Your mission is to find the treasure.")
 #     print('You fell into a hole. Game Over🏴‍☠️')
 
 
-# RANDOMISATION 
-import random
+# RANDOMISATION
 
-random_integer = random.randint(1, 10)
+# random_integer = random.randint(1, 10)
 # print(random_integer)
 
-random_float = random.random() * 5
-print(random_float)
+# random_float = random.random() * 5
+# print(random_float)
 
-love_score = random.randint(1, 100)
-print(f"Your love score is {love_score}")
+# love_score = random.randint(1, 100)
+# print(f"Your love score is {love_score}")
 
+
+# Interactive Coding 4.1
+# Remember to use the random module
+# Hint: Remember to import the random module here at the top of the file. 🎲
+
+# Write the rest of your code below this line 👇
+
+random_int = random.randint(0, 1)
+
+if random_int == 1:
+    print('Heads')
+else:
+    print('Tails')
