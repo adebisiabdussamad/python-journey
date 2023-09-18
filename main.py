@@ -295,24 +295,24 @@ print("Welcome to Treasure Island.")
 print("Your mission is to find the treasure.")
 
 # Write your code below this line 👇
-first_move = input('You are at a crossroad. Where do you want to go? "left" or "right"? ').lower()
+first_move = input(
+    'You\'re at a crossroad. Where do you want to go? "left" or "right"? ').lower()
 
 if first_move == 'left':
-    second_move = input('You come to a lake. Do you want to "swim" or "wait"? ').lower()
+    second_move = input(
+        'You come to a lake. Do you want to "swim" or "wait"? ').lower()
     if second_move == 'wait':
-        third_move = input('You see three doors - "red", "blue", and "yellow". Which one do you choose? ').lower()
+        third_move = input(
+            'You see three doors - "red", "blue", and "yellow". Which one do you choose? ').lower()
         if third_move == 'blue':
-            print('Eaten by beasts. Game Over.')
+            print('Eaten by beasts. Game Over🏴‍☠️')
         elif third_move == 'red':
-            print('Burned by fire. Game Over.')
+            print('Burned by fire. Game Over🏴‍☠️')
         elif third_move == 'yellow':
-            print('Congratulations! You found the treasure and won the game!')
+            print('Congratulations! You found the treasure and won the game!🏆🪙')
         else:
             print('Game Over')
     else:
-        print('You were attacked by a giant trout. Game Over')
+        print('You were attacked by a giant trout. Game Over🏴‍☠️')
 else:
-    print('You fell into a hole. Game Over')
-
-
-    'Whats up my people'
+    print('You fell into a hole. Game Over🏴‍☠️')
