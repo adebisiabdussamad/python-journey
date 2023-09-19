@@ -370,6 +370,7 @@
 
 # Interactive Coding 4.3
 # 🚨 Don't change the code below 👇
+import random
 row1 = ["⬜️", "️⬜️", "️⬜️"]
 row2 = ["⬜️", "⬜️", "️⬜️"]
 row3 = ["⬜️️", "⬜️️", "⬜️️"]
@@ -379,27 +380,59 @@ position = input("Where do you want to put the treasure? ")
 # 🚨 Don't change the code above 👆
 
 # Write your code below this row 👇
+horizontal = int(position[0])
+vertical = int(position[1])
 
-
-if int(position) == 11:
-    map[0][0] = 'X'
-elif int(position) == 21:
-    map[0][1] = 'X'
-elif int(position) == 31:
-    map[0][2] = 'X'
-elif int(position) == 12:
-    map[1][0] = 'X'
-elif int(position) == 22:
-    map[1][1] = 'X'
-elif int(position) == 32:
-    map[1][2] = 'X'
-elif int(position) == 13:
-    map[2][0] = 'X'
-elif int(position) == 23:
-    map[2][1] = 'X'
-elif int(position) == 33:
-    map[2][2] = 'X'
+map[vertical-1][horizontal-1] = 'X'
+# if int(position) == 11:
+#     map[0][0] = 'X'
+# elif int(position) == 21:
+#     map[0][1] = 'X'
+# elif int(position) == 31:
+#     map[0][2] = 'X'
+# elif int(position) == 12:
+#     map[1][0] = 'X'
+# elif int(position) == 22:
+#     map[1][1] = 'X'
+# elif int(position) == 32:
+#     map[1][2] = 'X'
+# elif int(position) == 13:
+#     map[2][0] = 'X'
+# elif int(position) == 23:
+#     map[2][1] = 'X'
+# elif int(position) == 33:
+#     map[2][2] = 'X'
 # Write your code above this row 👆
 
 # 🚨 Don't change the code below 👇
 print(f"{row1}\n{row2}\n{row3}")
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+game_input = [rock, paper, scissors]
+
+computer_input = random.randint(0, len(scissors)-1)
+print(computer_input)
