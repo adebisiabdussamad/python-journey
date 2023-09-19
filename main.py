@@ -356,13 +356,50 @@
 
 # Interactive Coding 4.2
 # Import the random module here
-import random
+# import random
 # Split string method
-names_string = input("Give me everybody's names, separated by a comma. ")
-names = names_string.split(", ")
+# names_string = input("Give me everybody's names, separated by a comma. ")
+# names = names_string.split(", ")
 # 🚨 Don't change the code above 👆
-random_name = random.randint(1, len(names)-1)
+# random_name = random.randint(1, len(names)-1)
 # Write your code below this line 👇
 # print(names[random_name])
-print(f'{names[random_name]} is going to buy the meal today!')
+# print(f'{names[random_name]} is going to buy the meal today!')
 # print(names[random_name])
+
+
+# Interactive Coding 4.3
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️", "️⬜️", "️⬜️"]
+row2 = ["⬜️", "⬜️", "️⬜️"]
+row3 = ["⬜️️", "⬜️️", "⬜️️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
+
+# Write your code below this row 👇
+
+
+if int(position) == 11:
+    map[0][0] = 'X'
+elif int(position) == 21:
+    map[0][1] = 'X'
+elif int(position) == 31:
+    map[0][2] = 'X'
+elif int(position) == 12:
+    map[1][0] = 'X'
+elif int(position) == 22:
+    map[1][1] = 'X'
+elif int(position) == 32:
+    map[1][2] = 'X'
+elif int(position) == 13:
+    map[2][0] = 'X'
+elif int(position) == 23:
+    map[2][1] = 'X'
+elif int(position) == 33:
+    map[2][2] = 'X'
+# Write your code above this row 👆
+
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
