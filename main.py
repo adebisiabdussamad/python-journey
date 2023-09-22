@@ -370,20 +370,20 @@
 
 # Interactive Coding 4.3
 # 🚨 Don't change the code below 👇
-import random
-row1 = ["⬜️", "️⬜️", "️⬜️"]
-row2 = ["⬜️", "⬜️", "️⬜️"]
-row3 = ["⬜️️", "⬜️️", "⬜️️"]
-map = [row1, row2, row3]
-print(f"{row1}\n{row2}\n{row3}")
-position = input("Where do you want to put the treasure? ")
+# import random
+# row1 = ["⬜️", "️⬜️", "️⬜️"]
+# row2 = ["⬜️", "⬜️", "️⬜️"]
+# row3 = ["⬜️️", "⬜️️", "⬜️️"]
+# map = [row1, row2, row3]
+# print(f"{row1}\n{row2}\n{row3}")
+# position = input("Where do you want to put the treasure? ")
 # 🚨 Don't change the code above 👆
 
 # Write your code below this row 👇
-horizontal = int(position[0])
-vertical = int(position[1])
+# horizontal = int(position[0])
+# vertical = int(position[1])
 
-map[vertical-1][horizontal-1] = 'X'
+# map[vertical-1][horizontal-1] = 'X'
 # if int(position) == 11:
 #     map[0][0] = 'X'
 # elif int(position) == 21:
@@ -405,7 +405,10 @@ map[vertical-1][horizontal-1] = 'X'
 # Write your code above this row 👆
 
 # 🚨 Don't change the code below 👇
-print(f"{row1}\n{row2}\n{row3}")
+# print(f"{row1}\n{row2}\n{row3}")
+
+
+import random
 rock = '''
     _______
 ---'   ____)
@@ -433,6 +436,36 @@ scissors = '''
 ---.__(___)
 '''
 game_input = [rock, paper, scissors]
+player_input = input(
+    'What do you choose? Type 0 for rock, for Paper 1 or 2 for Scissors. ')
 
-computer_input = random.randint(0, len(scissors)-1)
-print(computer_input)
+
+player_input = int(player_input)
+if player_input == 0:
+    print(game_input[0])
+elif player_input == 1:
+    print(game_input[1])
+elif player_input == 2:
+    print(game_input[2])
+
+computer_input = random.randint(0, len(game_input)-1)
+if computer_input == 0:
+    print(game_input[0])
+elif computer_input == 1:
+    print(game_input[1])
+elif computer_input == 2:
+    print(game_input[2])
+
+if player_input == 0 and computer_input == 2:
+    print('You Win!')
+elif player_input == 2 and computer_input == 1:
+    print('You Win!')
+elif player_input == 1 and computer_input == 0:
+    print('You Win!')
+elif player_input == computer_input:
+    print('It\'s a Draw!')
+else:
+    print('You Lose!')
+# rock wins against scissors
+# Scissors wins against paper
+# Paper wins against rock
