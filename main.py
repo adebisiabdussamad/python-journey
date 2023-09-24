@@ -436,11 +436,9 @@ scissors = '''
 ---.__(___)
 '''
 game_input = [rock, paper, scissors]
-player_input = input(
-    'What do you choose? Type 0 for rock, for Paper 1 or 2 for Scissors. ')
+player_input = int(input(
+    'What do you choose? Type 0 for rock, for Paper 1 or 2 for Scissors. '))
 
-
-player_input = int(player_input)
 if player_input == 0:
     print(game_input[0])
 elif player_input == 1:
@@ -469,3 +467,28 @@ else:
 # rock wins against scissors
 # Scissors wins against paper
 # Paper wins against rock
+
+# Angela's Solution
+# game_images = [rock, paper, scissors]
+
+# users_choice = int(input(
+#     'What do you choose? Type 0 for rock, for Paper 1 or 2 for Scissors.\n '))
+# if users_choice >= 3 or users_choice < 0:
+#     print('You typed an invalid choice. You lose!')
+# else:
+#     print(game_images[users_choice])
+
+#     computer_choice = random.randint(0, 2)
+#     print('Computer choose: ')
+#     print(game_images[computer_choice])
+
+# if users_choice == 0 and computer_choice == 2:
+#     print('You Win!')
+# elif computer_choice == 0 and users_choice == 2:
+#     print('You lose')
+# elif users_choice > computer_choice:
+#     print('You win!')
+# elif computer_choice > users_choice:
+#     print('You lose!')
+# elif computer_choice == users_choice:
+#     print('It\'s a draw!')
